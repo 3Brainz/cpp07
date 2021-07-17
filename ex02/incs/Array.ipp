@@ -1,6 +1,8 @@
 template<class T>
-Array<T>::Array() : _arr(NULL), _len(0)
-{}
+Array<T>::Array() :_len(0)
+{
+	_arr = new T[0];
+}
 
 template<class T>
 Array<T>::Array(unsigned int len) : _len(len)

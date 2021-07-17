@@ -1,13 +1,18 @@
 #include <Templates.hpp>
 
-int main()
-{
-	int a = 10;
-	int b = 23;
-
-	cout << "a:" << a << "b:" << b << std::endl;
-	::swap<int>(a, b);
-	cout << "a:" << a << "b:" << b << std::endl;
-	cout << "max 1, 2:" << ::max<int>(1,2) << std::endl;
-	cout << "min 1, 2:" << ::min<int>(1,2) << std::endl;
+int main( void )
+{ 
+	int a = 2;
+	int b = 3;
+	::swap( a, b );
+	std::cout << "a = " << a << ", b = " << b << std::endl;
+	std::cout << "min( a, b ) = " << ::min( a, b ) << std::endl;
+	std::cout << "max( a, b ) = " << ::max( a, b ) << std::endl;
+	std::string c = "chaine1";
+	std::string d = "chaine2";
+	::swap(c, d);
+	std::cout << "c = " << c << ", d = " << d << std::endl;
+	std::cout << "min( c, d ) = " << ::min( c, d ) << std::endl;
+	std::cout << "max( c, d ) = " << ::max( c, d ) << std::endl;
+	return 0; 
 }
